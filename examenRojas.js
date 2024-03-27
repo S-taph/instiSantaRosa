@@ -13,9 +13,9 @@
 
 function tipoFigura(lados, longitud) {
     let perimetro = longitud * lados;
-
+    let perimetroCirc = 3.14159 * longitud * 2;
     if (lados == 0) {
-        return "Círculo de perímetro " + perimetro;
+        return "Círculo de perímetro " + perimetroCirc;
     } else if (lados == 3) {
         return "Triángulo de perímetro " + perimetro;
     } else if (lados == 4) {
@@ -30,12 +30,13 @@ function tipoFigura(lados, longitud) {
 }
 
 let cantLados = -1;
-
-while (cantLados < 0) {
+let longitudLados = -1;
+while (cantLados < 0 || longitudLados <= 0) {
     
     cantLados = prompt("Ingrese el número de lados. El valor ingresado no puede ser menor a cero");
+    longitudLados = prompt("Ingrese la longitud de los lados. El valor ingresado debe ser mayor a cero")        
 }
 
-console.log("Según los lados ingresados, la figura es un: " + tipoFigura(cantLados));
+console.log("Según los lados ingresados, la figura es un: " + tipoFigura(cantLados, longitudLados));
 
 
