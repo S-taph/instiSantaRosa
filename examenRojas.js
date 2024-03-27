@@ -11,7 +11,7 @@
 // Polígono: si el número de lados es mayor que 6.
 // Asegúrate de incluir un mensaje de error si el número de lados es menor o igual a cero.
 
-function figuraGeo(lados) {
+function tipoFigura(lados) {
     if (lados == 0) {
         return "Círculo";
     } else if (lados == 3) {
@@ -34,6 +34,6 @@ while (cantLados < 0) {
     cantLados = prompt("Ingrese el número de lados. El valor ingresado no puede ser menor a cero");
 }
 
-console.log("Según los lados ingresados, la figura es un: " + figuraGeo(cantLados));
+console.log("Según los lados ingresados, la figura es un: " + tipoFigura(cantLados));
 
 
