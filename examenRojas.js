@@ -30,7 +30,10 @@ function tipoFigura(lados, longitud) {
 }
 
 let cantLados = -1;
-let longitudLados = -1;
+let longitudLados = 0;
+
+//El ciclo while controla que los valores ingresados sean correctos
+
 while (cantLados < 0 || longitudLados <= 0) {
     
     cantLados = prompt("Ingrese el número de lados. El valor ingresado no puede ser menor a cero");
