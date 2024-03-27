@@ -11,19 +11,21 @@
 // Polígono: si el número de lados es mayor que 6.
 // Asegúrate de incluir un mensaje de error si el número de lados es menor o igual a cero.
 
-function tipoFigura(lados) {
+function tipoFigura(lados, longitud) {
+    let perimetro = longitud * lados;
+
     if (lados == 0) {
-        return "Círculo";
+        return "Círculo de perímetro " + perimetro;
     } else if (lados == 3) {
-        return "Triángulo";
+        return "Triángulo de perímetro " + perimetro;
     } else if (lados == 4) {
-        return "Cuadrado"
+        return "Cuadrado de perímetro " + perimetro;
     } else if (lados == 5) {
-        return "Pentágono";
+        return "Pentágono de perímetro " + perimetro;
     } else if (lados == 6) {
-        return "Hexágono";
+        return "Hexágono de perímetro " + perimetro;
     } else {
-        return "Polígono";
+        return "Polígono de perímetro " + perimetro;
     }
 }
 
