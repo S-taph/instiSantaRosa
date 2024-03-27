@@ -12,8 +12,10 @@
 // Asegúrate de incluir un mensaje de error si el número de lados es menor o igual a cero.
 
 function tipoFigura(lados, longitud) {
+
     let perimetro = longitud * lados;
     let perimetroCirc = 3.14159 * longitud * 2;
+
     if (lados == 0) {
         return "Círculo de perímetro " + perimetroCirc;
     } else if (lados == 3) {
